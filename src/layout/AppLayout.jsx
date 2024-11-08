@@ -10,13 +10,13 @@ export default function AppLayout() {
   }
 
   return (
-    <main className="h-screen flex overflow-hidden">
+    <main className=" flex overflow-hidden">
       {/* Sidebar: Fixed on the left */}
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
 
       {/* Main content: Adjusted based on sidebar state */}
       <div
-        className={`h-screen bg-gradient-to-r from-gray-800 to-gray-900 transition-all duration-300 flex-1 ${
+        className={`h-full bg-gradient-to-r from-gray-800 to-gray-900 transition-all duration-300 flex-1 ${
           isOpen ? "ml-[350px]" : "ml-[60px]"
         } w-full`}
       >
