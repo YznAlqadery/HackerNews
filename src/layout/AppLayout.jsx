@@ -10,13 +10,13 @@ export default function AppLayout() {
   }
 
   return (
-    <main className=" flex overflow-y-auto">
+    <main className=" flex overflow-y-auto ">
       {/* Sidebar: Fixed on the left */}
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
 
       {/* Main content: Adjusted based on sidebar state */}
       <div
-        className={`h-full bg-gradient-to-r from-gray-800 to-gray-900 transition-all duration-300 flex-1 ${
+        className={`h-screen bg-gradient-to-r from-gray-800 to-gray-900 transition-all duration-300 flex-1 ${
           isOpen ? "ml-[350px]" : "ml-[60px]"
         } w-full`}
       >
