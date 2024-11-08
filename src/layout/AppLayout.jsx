@@ -10,7 +10,7 @@ export default function AppLayout() {
   }
 
   return (
-    <main className=" flex overflow-y-auto ">
+    <main className=" flex overflow-y-hidden ">
       {/* Sidebar: Fixed on the left */}
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
 
