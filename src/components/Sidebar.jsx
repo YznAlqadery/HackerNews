@@ -14,7 +14,7 @@ const navItems = [
 export default function Sidebar({ isOpen, toggleSidebar }) {
   return (
     <aside
-      className={`fixed top-0 left-0 h-full bg-gradient-to-r from-gray-800 to-gray-900 text-slate-200 transition-all duration-300 ${
+      className={`fixed top-0 left-0 h-screen bg-gradient-to-r from-gray-800 to-gray-900 text-slate-200 transition-all duration-300 ${
         isOpen ? "w-[350px]" : "w-[60px]"
       } flex flex-col justify-between`} // Use flex-col and justify-between to push content to the bottom
     >
