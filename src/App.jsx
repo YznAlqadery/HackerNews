@@ -1,8 +1,4 @@
-import {
-  createBrowserRouter,
-  Navigate,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 //import { ReactQueryDevtools } from "react-query/devtools";
 
@@ -27,10 +23,6 @@ const BrowserRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Navigate to="/news" replace={true} />,
-      },
-      {
-        path: "/news",
         element: <NewStories />,
       },
       {
